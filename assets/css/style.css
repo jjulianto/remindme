@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mt {
+    margin-top: 8rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100%;
+    top: 0;
+    padding-top: 10px;
+    background-color: #eef4ff;
+}
+
+.nav {
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.img-logo {
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.nav-logo {
+    color: #212121;
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bold;
+}
+
+.nav-logo span,
+.footer-logo span {
+    color: #2d76f9;
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 3.5rem;
+    margin-left: 5rem;
+}
+
+.nav-link {
+    color: #212121;
+}
+
+.active-link {
+    color: #2d76f9;
+    font-weight: bold;
+}
+
+.nav-btns {
+    margin-left: auto;
+}
+
+.nav-button {
+    background-color: transparent;
+    color: #2d76f9;
+    border-radius: 50px;
+    border: 1px solid #2d76f9;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    min-height: 600px;
+}
+
+.home-background {
+    position: relative;
+    background-color: #eef4ff;
+    border-bottom-left-radius: 100px;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 3rem;
+}
+
+.home-img {
+    padding-top: 3.5rem;
+    margin: 0 5.5rem 0 auto;
+}
+
+.home-card-easy {
+    background-color: #ffffff;
+    position: absolute;
+    top: 6rem;
+    right: 20rem;
+    border-radius: 20px;
+}
+
+.home-card-interesting {
+    background-color: #ffffff;
+    position: absolute;
+    top: 15rem;
+    right: 5rem;
+    border-radius: 20px;
+}
+
+.home-card-user {
+    background-color: #ffffff;
+    position: absolute;
+    padding: 0 1rem 0 1rem;
+    top: 25rem;
+    right: 24rem;
+    border-radius: 20px;
+}
+
+.home-card-title {
+    color: #747474;
+    margin: 0.5rem 0 0 1rem;
+}
+
+.home-card-image {
+    position: relative;
+    top: 5px;
+}
+
+.home-card-description {
+    padding: 1rem;
+    color: #2d76f9;
+    font-weight: 500;
+}
+
+.home-card-description-user {
+    padding: 0.75rem;
+    color: #2d76f9;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.home-card-description span {
+    padding: 0.5rem 1rem;
+    margin-right: 5px;
+    color: #ffffff;
+    background-color: #2d76f9;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.home-blog-img {
+    width: 250px;
+}
+
+.home-title {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+}
+
+.home-description {
+    color: #747474;
+    margin-bottom: 2rem;
+    line-height: 2.25rem;
+}
+
+.button {
+    background-color: #2d76f9;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.card {
+    padding-top: 8rem;
+}
+
+.card-img {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #eef4ff;
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    margin-bottom: 2rem;
+}
+
+.card-description {
+    color: #747474;
+    line-height: 2.25rem;
+}
+
+.task-container,
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-img,
+.testimonial-img {
+    position: relative;
+    left: -10rem;
+    background-color: #eef4ff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.remind-img {
+    position: relative;
+    right: -6.5rem;
+    background-color: #eef4ff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.task-title,
+.testimonial-title {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.task-description,
+.footer-description,
+.footer-link {
+    color: #747474;
+    line-height: 2.25rem;
+}
+
+.download-content {
+    text-align: center;
+    padding: 6rem;
+    background-color: #2d76f9;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.download-title {
+    font-size: 2.25rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
+}
+
+.download-button {
+    background-color: #ffffff;
+    color: #2d76f9;
+    margin-right: 2.5rem;
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+
+.about-button {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+
+.testimonial-img {
+    padding-right: 4rem;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card-title {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    color: #747474;
+}
+
+.testimonial-card-title span {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #212121 !important;
+}
+
+.testimonial-description {
+    line-height: 2.25rem;
+    font-size: 1.125rem;
+}
+
+footer {
+    margin-bottom: 5rem;
+}
+
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+.img-footer {
+    margin-right: 20px;
+    width: 7%;
+}
+
+.footer-logo {
+    color: #212121;
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bold;
+    font-size: 2.25rem;
+    position: relative;
+    bottom: 1.75rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-links {
+    color: #2d76f9;
+}
+
+.footer-social {
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+}
