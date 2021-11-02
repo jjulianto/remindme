@@ -20,7 +20,7 @@ a {
 }
 
 .mt {
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .container {
@@ -30,10 +30,12 @@ a {
 }
 
 .header {
+    position: fixed;
     width: 100%;
     top: 0;
-    padding-top: 10px;
+    padding: 10px 0 20px 0;
     background-color: #eef4ff;
+    z-index: 100;
 }
 
 .nav {
@@ -42,10 +44,25 @@ a {
     align-items: flex-end;
 }
 
+.hamburger {
+    margin-left: auto;
+}
+
+.hamburger-icon {
+    position: relative;
+    top: 5px;
+    background-color: transparent;
+    border: 1px solid #2d76f9;
+    border-radius: 5px;
+    padding: 8px 10px;
+    display: block;
+    cursor: pointer;
+}
+
 .img-logo {
     margin-right: 10px;
     position: relative;
-    top: 10px;
+    top: 12px;
 }
 
 .nav-logo {
@@ -59,6 +76,12 @@ a {
     color: #2d76f9;
     font-family: "Nunito", sans-serif !important;
     font-weight: bold;
+}
+
+.nav-menu {
+    width: 88%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .nav-list {
@@ -76,7 +99,9 @@ a {
     font-weight: bold;
 }
 
-.nav-btns {
+.nav-btn {
+    position: relative;
+    top: 5px;
     margin-left: auto;
 }
 
@@ -87,11 +112,7 @@ a {
     border: 1px solid #2d76f9;
     padding: 0.5rem 2rem;
     cursor: pointer;
-}
-
-section {
-    width: 100%;
-    min-height: 600px;
+    margin-left: auto;
 }
 
 .home-background {
@@ -100,7 +121,8 @@ section {
     border-bottom-left-radius: 100px;
 }
 
-.home-container {
+.home-container,
+.download-container {
     display: flex;
     align-items: center;
 }
@@ -112,14 +134,14 @@ section {
 }
 
 .home-img {
-    padding-top: 3.5rem;
+    padding-top: 5rem;
     margin: 0 5.5rem 0 auto;
 }
 
 .home-card-easy {
     background-color: #ffffff;
     position: absolute;
-    top: 6rem;
+    top: 9rem;
     right: 20rem;
     border-radius: 20px;
 }
@@ -127,7 +149,7 @@ section {
 .home-card-interesting {
     background-color: #ffffff;
     position: absolute;
-    top: 15rem;
+    top: 18rem;
     right: 5rem;
     border-radius: 20px;
 }
@@ -177,9 +199,13 @@ section {
     width: 250px;
 }
 
+.home-content {
+    padding-bottom: 5.5rem;
+}
+
 .home-title {
     font-size: 4rem;
-    margin-bottom: 0.75rem;
+    margin: 7rem 0 0.75rem 0;
 }
 
 .home-description {
@@ -192,6 +218,7 @@ section {
     background-color: #2d76f9;
     color: #ffffff;
     padding: 1rem 2.5rem;
+    margin:  0;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -214,6 +241,11 @@ section {
 .card-description {
     color: #747474;
     line-height: 2.25rem;
+}
+
+.task-container,
+.download-container {
+    margin-top: 5rem;
 }
 
 .task-container,
@@ -257,8 +289,9 @@ section {
     text-align: center;
     padding: 6rem;
     background-color: #2d76f9;
-    border-radius: 50px;
+    border-radius: 20px;
     width: 100%;
+    margin-top: 3rem;
 }
 
 .download-title {
@@ -273,7 +306,7 @@ section {
     margin-right: 2.5rem;
     border: 0;
     border-radius: 50px;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     cursor: pointer;
 }
 
@@ -314,7 +347,7 @@ section {
 }
 
 footer {
-    margin-bottom: 5rem;
+    margin: 3rem 0 5rem 0;
 }
 
 .footer-section {
@@ -340,11 +373,146 @@ footer {
     align-items: flex-start;
 }
 
+.footer-links-parent {
+    display: flex;
+    column-gap: 10rem;
+}
+
 .footer-links {
     color: #2d76f9;
+}
+
+.footer-socials-title {
+    display: none;
 }
 
 .footer-social {
     font-size: 1.25rem;
     margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 719px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .home-background {
+        border-bottom-left-radius: 0;
+    }
+    .home-title {
+        margin: 6rem 0 1.5rem 0;
+        font-size: 3rem;
+    }
+    .home-content {
+        padding-bottom: 0;
+    }
+    .home-img {
+        margin: 1rem auto 4rem auto;
+    }
+    .home-card-easy {
+        top: 60%;
+        right: 55%;
+    }
+    .home-card-interesting {
+        top: 70%;
+        right: 8%;
+    }
+    .home-card-user {
+        top: 80%;
+        right: 50%;
+    }
+    .home-card-description,
+    .home-card-title {
+        font-size: 10px;
+    }
+    .home-card-description-user {
+        font-size: 18px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .card {
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .home-container,
+    .card-container,
+    .task-container,
+    .footer-container {
+        flex-direction: column;
+    }
+    .remind-content {
+        order: 2;
+    }
+    .remind-img {
+        order: 1;
+    }
+    .task-img,
+    .remind-img,
+    .testimonial-img {
+        left: 0;
+        right: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .task-blog-img,
+    .remind-blog-img,
+    .testimonial-blog-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .task-title {
+        padding-top: 3rem;
+        font-size: 24px;
+    }
+    .download-container {
+        margin-top: 0;
+    }
+    .download-content {
+        padding: 0.75rem;
+    }
+    .download-title {
+        margin: 1rem 0 2rem 0;
+        font-size: 24px;
+    }
+    .download-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .download-button,
+    .about-button {
+        margin: 1rem auto 1rem auto;
+    }
+    .testimonial-img {
+        display: none;
+    }
+    .testimonial-title,
+    .footer-logo {
+        font-size: 24px;
+    }
+    .testimonial-description,
+    .footer-description {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+    .img-footer {
+        width: 70px;
+    }
+    .footer-links-parent {
+        column-gap: 3.5rem;
+    }
+    .footer-socials-title {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 2rem 0 1rem 0;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .hamburger {
+        display: none;
+    }
 }

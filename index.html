@@ -17,19 +17,24 @@
                 <img src="assets/images/logo.png" class="img-logo" alt="logo" />
                 <a href="#" class="nav-logo">Remind<span>me</span></a>
             </div>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active-link"> Home </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> Features </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> About Us </a>
-                </li>
-            </ul>
-            <div class="nav-btns">
-                <button class="nav-button">About App</button>
+            <a id="hamburger" class="hamburger">
+                <img src="assets/images/hamburger.png" class="hamburger-icon" alt="hamburger" />
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Features </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> About Us </a>
+                    </li>
+                </ul>
+                <div class="nav-btn">
+                    <button class="nav-button">About App</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -109,7 +114,7 @@
         </section>
 
         <section>
-            <div class="task-container container mt">
+            <div class="task-container container">
                 <div class="remind-content">
                     <h1 class="task-title">
                         Get the highest priority application notification
@@ -124,13 +129,15 @@
             </div>
         </section>
         <section>
-            <div class="home-container container mt">
+            <div class="download-container container">
                 <div class="download-content">
                     <h1 class="download-title">
                         Download an app now and the various <br /> benefits you will get immediately
                     </h1>
-                    <button class="download-button">Download App</button>
-                    <button class="about-button">About App</button>
+                    <div class="download-buttons">
+                        <button class="download-button">Download App</button>
+                        <button class="about-button">About App</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,7 +163,7 @@
             </div>
         </section>
 
-        <footer class="mt">
+        <footer>
             <div class="container">
                 <div class="footer-section">
                     <div class="logo">
@@ -167,32 +174,35 @@
                 <div class="footer-container">
                     <div class="footer-content">
                         <p class="footer-description">
-                            Task deadlines and scheduling <br /> applications with various benefits and <br /> advantages
+                            Task deadlines and scheduling <br /> applications with various benefits and <br />advantages
                         </p>
                     </div>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#" class="footer-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Features</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">About Us</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#" class="footer-link">Set Task Better</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Easy Manage</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Get Notification</a>
-                        </li>
-                    </ul>
+                    <div class="container footer-links-parent">
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="footer-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">About Us</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="footer-link">Set Task Better</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Easy Manage</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Get Notification</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="footer-socials">
+                        <p class="footer-socials-title">Follow Us</p>
                         <img src="assets/images/facebook.png" class="footer-social" alt="social-icon" />
                         <img src="assets/images/twitter.png" class="footer-social" alt="social-icon" />
                         <img src="assets/images/linkedin.png" class="footer-social" alt="social-icon" />
